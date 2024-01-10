@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- FrameLayout for the main content -->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Add your main content views here -->
+
+    </FrameLayout>
+
+    <!-- NavigationView using a LinearLayout for horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_weight="1"
+            app:menu="@menu/nav_menu"
+            android:backgroundTint="@color/blue"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            />
+
+        <!-- Add other views if needed -->
+
+    </LinearLayout>
+
+</LinearLayout>
